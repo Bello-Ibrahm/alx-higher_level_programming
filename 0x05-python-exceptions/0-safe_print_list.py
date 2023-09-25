@@ -8,4 +8,4 @@ def safe_print_list(my_list=[], x=0):
         except BaseException:
             break
     print()
-    return ele_count
+    return (ele_count)
