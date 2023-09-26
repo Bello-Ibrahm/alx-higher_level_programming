@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-class Square:
+"""Write a class Square that defines a square by: (based on 1-square.py)
+"""
 
+
+class Square:
     """ Class Square that defines methods and attributes for a square object
     - Write a class Square that defines a square by: (based on 1-square.py)"""
 
