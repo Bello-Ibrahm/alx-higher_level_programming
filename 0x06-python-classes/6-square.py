@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """Write a class Square that defines a square by: (based on 5-square.py)"""
+
+
 class Square:
 
     """class Square"""
@@ -43,7 +45,7 @@ class Square:
 
     def area(self):
         """ Method that calculates current square area """
-        return (self.__size **2)
+        return (self.__size ** 2)
 
     def my_print(self):
         """ Method that prints in stdout the square with the char # """
