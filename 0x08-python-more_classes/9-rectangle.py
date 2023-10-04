@@ -177,4 +177,4 @@ class Rectangle:
             Rectangle: width and height = size
 
         """
-        return (Rectangle(size, size))
+        return Rectangle(size, size)
