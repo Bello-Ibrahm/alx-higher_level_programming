@@ -12,17 +12,18 @@ You are not allowed to import any module"""
 
 
 def add_integer(a, b=98):
-    """adds two integers together
+    """Function that adds 2 integers
+    Args are a and b, and they can be int or float
+    If Args are invalid type, a TypeError is raised"""
 
-    Args:
-       a (int): first integer
-       b (int) (default 98): second integer
-
-    Returns:
-        int: sum of a and b
-    """
-    if not isinstance(a, (int, float)):
+    if not isinstance(a, int) and not isinstance(a, float):
         raise TypeError("a must be an integer")
-    if not isinstance(b, (int, float)):
+    if not isinstance(b, int) and not isinstance(b, float):
         raise TypeError("b must be an integer")
-    return (int(a) + int(b))
+
+    if isinstance(a, float):
+        a = int(a)
+    if isinstance(b, float):
+        b = int(b)
+
+    return int(a + b)
