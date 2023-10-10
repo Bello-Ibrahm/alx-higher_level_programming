@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Class that inherits from list """
 
 
 def inherits_from(obj, a_class):
