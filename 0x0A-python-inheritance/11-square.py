@@ -19,9 +19,4 @@ class Square(Rectangle):
 
     def area(self):
         """ Area method through Super call """
-        return (super().area())
-
-    def __str__(self):
-        """ Method for when print is used """
-        msg = "[Square] {:d}/{:d}".format(self.__size, self.__size)
-        return (msg)
+        return super().area()
