@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Comments"""
 
 
 def read_file(filename=""):
