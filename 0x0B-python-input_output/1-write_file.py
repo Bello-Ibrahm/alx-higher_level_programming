@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-"""Comments"""
 
 
 def number_of_lines(filename=""):
