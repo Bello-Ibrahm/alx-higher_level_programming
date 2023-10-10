@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Task 12"""
 
+
 def add_attribute(obj, name, value):
     """ Function to add new attribute IF possible (object has __dict__()) """
 
