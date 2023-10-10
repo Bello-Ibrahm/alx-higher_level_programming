@@ -12,11 +12,15 @@ class Square(Rectangle):
     """ Class that defines a Square by inheritance of Rectangle class """
 
     def __init__(self, size):
-        """ Constructor """
-        self.integer_validator("size", size)
-        self.__size = size
-        super().__init__(size, size)
+        """initializes Square
 
-    def area(self):
-        """ Area method through Super call """
-        return super().area()
+        Attributes:
+            self.__size: size of one side of the square
+
+        Args:
+            size: size of one side of the square
+
+        """
+        super().__init__(size, size)
+        super().integer_validator("size", size)
+        self.__size = size
