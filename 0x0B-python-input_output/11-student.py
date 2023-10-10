@@ -24,3 +24,8 @@ class Student:
             dic = {i: self.__dict__[i] for i in attrs if i in self.__dict__}
 
         return (dic)
+    
+    def reload_from_json(self, json):
+        """ replaces all attributes of the Student instance """
+        for i in json:
+            self.__dict__[i] = json[i]
