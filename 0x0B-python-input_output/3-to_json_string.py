@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-"""Comments"""
+""" object to json string function """
+
+import json
 
 
-def write_file(filename="", text=""):
-    """ function that writes a string to a text file (UTF8) and returns
-    the number of characters written"""
-
-    with open(filename, "w", encoding="utf-8") as myfile:
-        return myfile.write(text)
+def to_json_string(my_obj):
+    """ function that returns the JSON representation of an object (string) """
+    return json.dumps(my_obj)
