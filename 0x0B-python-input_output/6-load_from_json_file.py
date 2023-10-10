@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-""" json to string object function """
+""" Create object from json file  """
 
 import json
 
 
-def from_json_string(my_str):
-    """ function that returns an object (Python data structure) represented
-    by a JSON string"""
-    return json.loads(my_str)
+def load_from_json_file(filename):
+    """ function that creates an Object from a JSON file """
+
+    with open(filename, "r", encoding="utf-8") as myfile:
+        return json.load(myfile)
