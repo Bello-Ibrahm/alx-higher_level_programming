@@ -45,5 +45,6 @@ def matrix_divided(matrix, div):
         msg = "division by zero"
         raise ZeroDivisionError(msg)
 
-    new_m = [[round(j / div, 2) for j in i] for i in matrix]
+    """new_m = [[round(j / div, 2) for j in i] for i in matrix]"""
+    new_m = [list(map(lambda x: round(x / div, 2), row)) for row in matrix]
     return (new_m)
