@@ -243,7 +243,7 @@ class Test_create(unittest.TestCase):
         self.assertFalse(r1 is r2)
         self.assertFalse(r1 == r2)
 
-    #def test_Square1(self):
+    # def test_Square1(self):
         """ Test with different Square instances """
         """s1 = Square(3)
         d1 = s1.to_dictionary()
@@ -254,7 +254,7 @@ class Test_create(unittest.TestCase):
         self.assertFalse(s1 is s2)
         self.assertFalse(s1 == s2)"""
 
-    #def test_Square2(self):
+    # def test_Square2(self):
         """ Test with different Square instances """
         """s1 = Square(3, 4)
         d1 = s1.to_dictionary()
@@ -265,27 +265,27 @@ class Test_create(unittest.TestCase):
         self.assertFalse(s1 is s2)
         self.assertFalse(s1 == s2)"""
 
-    #def test_Square3(self):
+    # def test_Square3(self):
         """ Test with different Square instances """
-        #s1 = Square(3, 4, 5)
-        #d1 = s1.to_dictionary()
-        #s2 = Square.create(**d1)
-        #st1 = str(s1)
-        #st2 = str(s2)
-        #self.assertEqual(st1, st2)
-        #self.assertFalse(s1 is s2)
-        #self.assertFalse(s1 == s2)
+        """s1 = Square(3, 4, 5)
+        d1 = s1.to_dictionary()
+        s2 = Square.create(**d1)
+        st1 = str(s1)
+        st2 = str(s2)
+        self.assertEqual(st1, st2)
+        self.assertFalse(s1 is s2)
+        self.assertFalse(s1 == s2)"""
 
-    #def test_Square4(self):
+    # def test_Square4(self):
         """ Test with different Square instances """
-        #s1 = Square(3, 4, 5, 82)
-        #d1 = s1.to_dictionary()
-        #s2 = Square.create(**d1)
-        #st1 = str(s1)
-        #st2 = str(s2)
-        #self.assertEqual(st1, st2)
-        #self.assertFalse(s1 is s2)
-        #self.assertFalse(s1 == s2)
+        """s1 = Square(3, 4, 5, 82)
+        d1 = s1.to_dictionary()
+        s2 = Square.create(**d1)
+        st1 = str(s1)
+        st2 = str(s2)
+        self.assertEqual(st1, st2)
+        self.assertFalse(s1 is s2)
+        self.assertFalse(s1 == s2)"""
 
     def test_nokwarg(self):
         """ Test with no kwarg """
@@ -464,7 +464,7 @@ class Test_load_from_file(unittest.TestCase):
         self.assertTrue(isinstance(sl1[0], Square))
         self.assertTrue(isinstance(sl1[1], Square))
 
-    #def test_square_ins_data(self):
+    # def test_square_ins_data(self):
         """ Test for Square instance data """
         """s1 = Square(5)
         s2 = Square(7, 9, 1)
@@ -508,7 +508,7 @@ class Test_save_to_file_csv(unittest.TestCase):
         Rectangle.save_to_file_csv(None)
         self.assertTrue(path.isfile(name))
 
-    #def test_checkEmptyList_csv(self):
+    # def test_checkEmptyList_csv(self):
         """ Checks Contents """
         """name = "Rectangle.csv"
         Rectangle.save_to_file_csv([])
@@ -516,7 +516,7 @@ class Test_save_to_file_csv(unittest.TestCase):
             r = myfile.read()
             self.assertEqual(r, '')"""
 
-    #def test_checkNoneRec_csv(self):
+    # def test_checkNoneRec_csv(self):
         """ Checks Contents """
         """name = "Rectangle.csv"
         Rectangle.save_to_file_csv(None)
@@ -542,7 +542,7 @@ class Test_save_to_file_csv(unittest.TestCase):
         self.assertEqual(str(r1), str(nl[0]))
         self.assertEqual(str(r2), str(nl[1]))
 
-    #def test_checkNoneSq_csv(self):
+    # def test_checkNoneSq_csv(self):
         """ Checks Contents """
         """name = "Square.csv"
         Square.save_to_file_csv(None)
@@ -550,7 +550,7 @@ class Test_save_to_file_csv(unittest.TestCase):
             r = myfile.read()
             self.assertEqual(r, '')"""
 
-    #def test_square_csv(self):
+    # def test_square_csv(self):
         """ Check if file is created with correct name """
         """name = "Square.csv"
         s1 = Square(10, 7, 2)
@@ -558,7 +558,7 @@ class Test_save_to_file_csv(unittest.TestCase):
         Square.save_to_file_csv([s1, s2])
         self.assertTrue(path.isfile(name))"""
 
-    #def test_square_content_csv(self):
+    # def test_square_content_csv(self):
         """ Check if file is created with correct content """
         """name = "Square.csv"
         s1 = Square(10, 7, 2)
@@ -592,7 +592,7 @@ class Test_load_from_file_csv(unittest.TestCase):
         rl1 = Rectangle.load_from_file_csv()
         self.assertEqual(rl1, [])
 
-    #def test_empty_file_list_csv(self):
+    # def test_empty_file_list_csv(self):
         """ Test when file is empty list """
         """Rectangle.save_to_file_csv(None)
         rl1 = Rectangle.load_from_file_csv()
@@ -620,7 +620,7 @@ class Test_load_from_file_csv(unittest.TestCase):
         self.assertEqual(str(r1), st1)
         self.assertEqual(str(r2), st2)
 
-    #def test_square_ins_csv(self):
+    # def test_square_ins_csv(self):
         """ Test for Square instance """
         """s1 = Square(5)
         s2 = Square(7, 9, 1)
@@ -630,7 +630,7 @@ class Test_load_from_file_csv(unittest.TestCase):
         self.assertTrue(isinstance(sl1[0], Square))
         self.assertTrue(isinstance(sl1[1], Square))"""
 
-    #def test_square_ins_data_csv(self):
+    # def test_square_ins_data_csv(self):
         """ Test for Square instance data """
         """s1 = Square(5)
         s2 = Square(7, 9, 1)
@@ -641,4 +641,3 @@ class Test_load_from_file_csv(unittest.TestCase):
         st2 = str(sl1[1])
         self.assertEqual(str(s1), st1)
         self.assertEqual(str(s2), st2)"""
-            

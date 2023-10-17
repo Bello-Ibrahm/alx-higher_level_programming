@@ -438,7 +438,7 @@ class Test_updateS(unittest.TestCase):
         self.assertEqual(s1.y, 5)
         self.assertEqual(s1.id, 85)
 
-    #def test_upsize(self):
+    # def test_upsize(self):
         """ Size Update """
         """s1 = Square(3, 4, 5, 6)
         s1.update(85, 12)
@@ -447,7 +447,7 @@ class Test_updateS(unittest.TestCase):
         self.assertEqual(s1.y, 5)
         self.assertEqual(s1.id, 85)"""
 
-    #def test_upxS(self):
+    # def test_upxS(self):
         """ X Update """
         """s1 = Square(3, 4, 5, 6)
         s1.update(85, 12, 0)
@@ -456,7 +456,7 @@ class Test_updateS(unittest.TestCase):
         self.assertEqual(s1.y, 5)
         self.assertEqual(s1.id, 85)"""
 
-    #def test_upyS(self):
+    # def test_upyS(self):
         """ Y Update """
         """s1 = Square(3, 4, 5, 6)
         s1.update(85, 12, 0, 7)
@@ -483,7 +483,7 @@ class Test_updateS(unittest.TestCase):
         self.assertEqual(s1.y, 5)
         self.assertEqual(s1.id, 15)
 
-    #def test_KwidthS(self):
+    # def test_KwidthS(self):
         """ width kwargs """
         """s1 = Square(3, 4, 5, 6)
         s1.update(size=16, id=15)
@@ -492,7 +492,7 @@ class Test_updateS(unittest.TestCase):
         self.assertEqual(s1.y, 5)
         self.assertEqual(s1.id, 15)"""
 
-    #def test_KxS(self):
+    # def test_KxS(self):
         """ x kwargs """
         """s1 = Square(3, 4, 5, 6)
         s1.update(x=18, size=16, id=15)
@@ -501,7 +501,7 @@ class Test_updateS(unittest.TestCase):
         self.assertEqual(s1.y, 5)
         self.assertEqual(s1.id, 15)"""
 
-    #def test_KyS(self):
+    # def test_KyS(self):
         """ y kwargs """
         """s1 = Square(3, 4, 5, 6)
         s1.update(x=18, size=16, y=19, id=15)
@@ -510,7 +510,7 @@ class Test_updateS(unittest.TestCase):
         self.assertEqual(s1.y, 19)
         self.assertEqual(s1.id, 15)"""
 
-    #def test_KfullchangeS(self):
+    # def test_KfullchangeS(self):
         """ Full change kwargs """
         """s1 = Square(3, 4, 5, 6)
         s1.update(id=15, size=16, x=18, y=19)
@@ -519,7 +519,7 @@ class Test_updateS(unittest.TestCase):
         self.assertEqual(s1.y, 19)
         self.assertEqual(s1.id, 15)"""
 
-    #def test_Kfullchange2S(self):
+    # def test_Kfullchange2S(self):
         """ Full change kwargs """
         """s1 = Square(3, 4, 5, 6)
         d1 = {"id": 15, "size": 16, "x": 18, "y": 19}
@@ -537,7 +537,7 @@ class Test_to_dictionaryS(unittest.TestCase):
         """ Set up for all methods """
         Base._Base__nb_objects = 0
 
-    #def test_dic1S(self):
+    # def test_dic1S(self):
         """ to dic test """
         """s1 = Square(2)
         d1 = s1.to_dictionary()
@@ -547,7 +547,7 @@ class Test_to_dictionaryS(unittest.TestCase):
         self.assertEqual(dic1["y"], d1["y"])
         self.assertEqual(dic1["id"], d1["id"])"""
 
-    #def test_dic2S(self):
+    # def test_dic2S(self):
         """ to dic test """
         """s1 = Square(3, 4)
         d1 = s1.to_dictionary()
@@ -557,7 +557,7 @@ class Test_to_dictionaryS(unittest.TestCase):
         self.assertEqual(dic1["y"], d1["y"])
         self.assertEqual(dic1["id"], d1["id"])"""
 
-    #def test_dic3S(self):
+    # def test_dic3S(self):
         """ to dic test """
         """s1 = Square(6, 4, 5)
         d1 = s1.to_dictionary()
@@ -567,7 +567,7 @@ class Test_to_dictionaryS(unittest.TestCase):
         self.assertEqual(dic1["y"], d1["y"])
         self.assertEqual(dic1["id"], d1["id"])"""
 
-    #def test_dic4S(self):
+    # def test_dic4S(self):
         """ to dic test """
         """s1 = Square(13, 14, 15, 82)
         d1 = s1.to_dictionary()
@@ -577,7 +577,7 @@ class Test_to_dictionaryS(unittest.TestCase):
         self.assertEqual(dic1["y"], d1["y"])
         self.assertEqual(dic1["id"], d1["id"])"""
 
-    #def test_dic5S(self):
+    # def test_dic5S(self):
         """ to dic test """
         """s1 = Square(13, 14, 15, 82)
         d1 = s1.to_dictionary()
