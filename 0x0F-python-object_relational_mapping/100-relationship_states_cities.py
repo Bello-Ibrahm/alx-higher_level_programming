@@ -2,7 +2,7 @@
 """
 This script prints the state and city data from the database
 """
-import sys
+from sys import argv
 from relationship_state import Base, State
 from relationship_city import City
 from sqlalchemy import create_engine
@@ -11,7 +11,7 @@ from sqlalchemy.orm import sessionmaker
 
 if __name__ == '__main__':
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'.
-                           format(sys.argv[1], sys.argv[2], sys.argv[3]),
+                           format(argv[1], argv[2], argv[3]),
                            pool_pre_ping=True)
     Base.metadata.create_all(engine)
 
@@ -19,9 +19,9 @@ if __name__ == '__main__':
     session = Session()
 
     new_state = State(name='California')
-    new_city = City(name='San Fransisco')
+    new_city = City(name='San Francisco')
     new_state.cities.append(new_city)
 
     session.add(new_state)
-    session.add(new_city)
     session.commit()
+    session.close()
