@@ -3,13 +3,19 @@
 
 
 def find_peak(list_of_integers):
+    """
+    Args:
+        list_of_integers: list of an integer(int) to find peak.
+    Return: peak of the integer list else None.
+    """
+
     if not list_of_integers:
         return None
 
     low, high = 0, len(list_of_integers) - 1
 
     while low < high:
-        mid = (low + high) // 2
+        mid = int((low + high) // 2)
 
         # Compare the middle element with its neighbors
         if list_of_integers[mid] > list_of_integers[mid + 1]:
