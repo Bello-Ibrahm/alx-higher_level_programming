@@ -2,7 +2,7 @@
 const req = require('request');
 const url = process.argv[2];
 
-req.get(url, 'utf-8', (err, content) => {
+req.get(url, (err, content) => {
   if (err) {
     console.log(err);
   } else {
